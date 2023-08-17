@@ -1,12 +1,18 @@
 // Capturando os 3 campos da tela.
-let email = document.getElementById('email');
-let senha = document.getElementById('senha');
-let btnEntrar = document.getElementById('btn-entrar');
+let email = document.getElementById("email");
+let senha = document.getElementById("senha");
+let btnEntrar = document.getElementById("btn-entrar");
 
 
 // Aqui capturo o evento de click para tomar uma ação qualquer
-btnEntrar.addEventListener('click', () => {
+btnEntrar.addEventListener("click", () => {
+  // 1° Pegar o email digitado
+  // 2° Pegar a senha digitada.
+  // 3° Validar se o email e senha estão corretos
+  // 4° Caso esteja incorreto, mandar mensagem de usuario ou senha invalida.
+  // 5° Caso esteja correto, ir para tela de cadastro de usuario
 
+<<<<<<< Updated upstream
     // 1° Pegar o email digitado
     let userEmail = email.value;
 
@@ -23,6 +29,9 @@ btnEntrar.addEventListener('click', () => {
 
     // Aqui precisamos enviar esse email e senha ao backend para saber se o usuario pode acessar o sistema.
     autenticar(userEmail, userSenha);
+=======
+  window.open("cadastro-usuario.html", "_self");
+>>>>>>> Stashed changes
 });
 
 
